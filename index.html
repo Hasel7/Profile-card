@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>My Profile Card</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Assets/CSS/style.css'>
+    <script src='Assets/JS/script.js' async></script>
+</head>
+
+<body>
+    <section>
+        <div class="profile-card" data-testid="test-profile-card">
+            <img src="Assets/Images/img retouch.jpg" alt="Profile Picture" data-testid="test-user-avatar">
+            <h2 data-testid="test-user-name">Ibekwe Kosisochukwu Hasel</h2>
+            <p data-testid="test-user-bio">Frontend developer passionate about creating accessible, performant web
+                experiences. I love turning
+                complex problems into elegant solutions and contributing to open-source projects that make a
+                difference..</p>
+            <div class="current-time-section">
+                <span>Current Time:</span>
+                <p id="current-time" data-testid="test-user-time"></p>
+
+            </div>
+            <span>Connect with me:</span>
+            <div class="social-links" data-testid="test-user-social-links">
+                <a href="https://x.com/Hasel_0" target="_blank"><button>Twitter</button></a>
+                <a href="https://linkedin.com/in/hasel-ibekwe-1a5097361" target="_blank"><button>LinkedIn</button></a>
+                <a href="https://github.com/Hasel7" target="_blank"><button>GitHub</button></a>
+                <a href="mailto:ibekwehasel@gmail.com" target="_blank"><button>Email</button></a>
+            </div>
+
+            <div class="additional-info">
+                <div class="info-column">
+                    <h3>Hobbies</h3>
+                    <ul data-testid="test-user-hobbies" id="hobbies-list">
+                        <li>Building Web Applications</li>
+                        <li>Football</li>
+                        <li>Video Editing</li>
+                        <li>Reading</li>
+                        <li>Watching Movies</li>
+                    </ul>
+                </div>
+
+                <div class="info-column">
+                    <h3>Dislikes</h3>
+                    <ul data-testid="test-user-dislikes" id="dislikes-list">
+                        <li>Slow Internet</li>
+                        <li>Unresponsive UI</li>
+                        <li>Long Meetings</li>
+                        <li>Debugging</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
