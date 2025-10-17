@@ -8,7 +8,7 @@ It displays a profile image, bio, hobbies, dislikes, and a live-updating current
 
 ## 🚀 Live Demo
 
-🔗 **GitHub Pages:** https://github.com/Hasel7/Profile-card
+🔗 **GitHub Pages:** [https://github.com/Hasel7/Profile-card](https://hasel7.github.io/Profile-card/)
 
 ---
 
