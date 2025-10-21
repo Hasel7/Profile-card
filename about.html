@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me - Profile Card</title>
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <style>
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 18px
+        }
+
+        section {
+            margin-bottom: 18px
+        }
+    </style>
+</head>
+
+<body>
+    <nav aria-label="Primary">
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main data-testid="test-about-page">
+        <h1>About Me</h1>
+
+        <section aria-labelledby="bio-heading" data-testid="test-about-bio">
+            <h2 id="bio-heading">Bio</h2>
+            <p>I am a frontend developer who enjoys building accessible and responsive web experiences. I like learning
+                new patterns and contributing to open-source.</p>
+        </section>
+
+        <section aria-labelledby="goals-heading" data-testid="test-about-goals">
+            <h2 id="goals-heading">Goals in this program</h2>
+            <ul>
+                <li>Improve accessibility skills</li>
+                <li>Master responsive layouts</li>
+                <li>Build production-quality projects</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="confidence-heading" data-testid="test-about-confidence">
+            <h2 id="confidence-heading">Areas of low confidence</h2>
+            <p>I want to get better at backend integrations and performance optimization under load.</p>
+        </section>
+
+        <section aria-labelledby="future-heading" data-testid="test-about-future-note">
+            <h2 id="future-heading">Note to future self</h2>
+            <p>Keep shipping small, consistent improvements. Don't be afraid to ask for feedback.</p>
+        </section>
+
+        <section aria-labelledby="extra-heading" data-testid="test-about-extra">
+            <h2 id="extra-heading">Extra thoughts</h2>
+            <p>Stay curious and focus on building a solid foundation.</p>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -11,6 +11,36 @@
             align-items: center;
             min-height: 100dvh;
             background-color: #e1def6;
+
+           
+            main,
+            .form-container {
+                width: min(1100px, 96%);
+                margin: 0 auto;
+            }
+
+            
+            nav[aria-label="Primary"] {
+                width: 100%;
+                max-width: 1100px;
+                margin: 18px auto;
+                padding: 0 12px;
+                text-align: center;
+            }
+
+            nav[aria-label="Primary"] a {
+                color: #1935AA;
+                text-decoration: none;
+                font-weight: 600;
+                margin: 0 6px;
+            }
+
+            nav[aria-label="Primary"] a:focus,
+            nav[aria-label="Primary"] a:hover {
+                text-decoration: underline;
+                outline: none;
+            }
+
             padding: 20px;
         }
 
@@ -23,6 +53,64 @@
             width: 600px;
             border: 2px solid #1935AA;
             margin-bottom: 20px;
+        }
+
+        /* Form styles (applies to contact page) */
+        form {
+            background: transparent
+        }
+
+        form label {
+            color: #222
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            font-size: 14px
+        }
+
+        button[type="submit"] {
+            background: #1935AA;
+            color: #fff;
+            border-radius: 8px;
+            padding: 10px 16px;
+            border: none;
+            cursor: pointer
+        }
+
+        button[type="submit"]:focus,
+        button[type="submit"]:hover {
+            background: #0f2f6f
+        }
+
+        :focus {
+            outline: 3px solid rgba(25, 53, 170, 0.18);
+            outline-offset: 3px
+        }
+
+        /* Responsiveness */
+        @media (min-width: 700px) {
+            .form-container {
+                padding: 26px
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                align-items: flex-start;
+                padding-top: 18px
+            }
+
+            nav[aria-label="Primary"] {
+                text-align: left;
+                padding-left: 18px
+            }
+
+            .profile-card {
+                width: 95%;
+                padding: 12px
+            }
         }
 
         .profile-card img {
@@ -143,7 +231,7 @@
             padding: 10px;
         }
 
-        /* Tablet screens (768px and below) */
+        /* Tablet screens */
         @media (max-width: 768px) {
             .profile-card {
                 width: 90%;
@@ -177,7 +265,7 @@
             }
         }
 
-        /* Small phones (480px and below) */
+        /* Small phones */
         @media (max-width: 480px) {
             body {
                 padding: 10px;
